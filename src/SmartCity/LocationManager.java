@@ -12,7 +12,7 @@ public class LocationManager {
     public void addLocation(String location) {
         graph.addLocation(location);
         locationTree.insert(location);
-        System.out.println("✅ Location '" + location + "' added successfully.");
+        System.out.println("Location '" + location + "' added successfully.");
     }
 
     public void removeLocation(String location) {
@@ -33,9 +33,10 @@ public class LocationManager {
         graph.displayConnections();
     }
 
+    
     public void displayLocations() {
-        System.out.print("🌆 All Locations (In-order): ");
+        System.out.print("All Locations (In-order): ");
         locationTree.inOrder();
-        System.out.println();
-    }
+    System.out.println();
+}
 }
