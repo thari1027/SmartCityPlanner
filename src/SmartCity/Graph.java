@@ -28,7 +28,7 @@ public class Graph {
             adjList.get(from).add(to);
             adjList.get(to).add(from);
         } else {
-            System.out.println("❌ One or both locations do not exist.");
+            System.out.println(" One or both locations do not exist.");
         }
     }
 
@@ -47,7 +47,7 @@ public class Graph {
             return;
         }
 
-        System.out.println("\n🌉 City Road Connections:");
+        System.out.println("\n City Road Connections:");
         for (String location : adjList.keySet()) {
             System.out.println(location + " -> " + adjList.get(location));
         }
@@ -56,7 +56,7 @@ public class Graph {
     // BFS traversal using a queue
     public void bfsTraversal(String start) {
         if (!adjList.containsKey(start)) {
-            System.out.println("❌ Location not found.");
+            System.out.println("Location not found.");
             return;
         }
 
@@ -83,7 +83,7 @@ public class Graph {
     // ✅ DFS traversal using recursion
     public void dfsTraversal(String start) {
         if (!adjList.containsKey(start)) {
-            System.out.println("❌ Location not found.");
+            System.out.println("Location not found.");
             return;
         }
 

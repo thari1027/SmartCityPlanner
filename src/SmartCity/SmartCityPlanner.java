@@ -98,7 +98,8 @@ public class SmartCityPlanner {
             }
 
         } while (choice != 9);
-
         sc.close();
-    }
+        System.out.println("Resources released. Exiting application.");
+    }
+
 }
